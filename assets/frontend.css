@@ -1,0 +1,189 @@
+/* Frontend styles with enhanced UI */
+.smd-audio-player, .smd-video-player {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.smd-audio-player:hover, .smd-video-player:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.smd-audio-player h4, .smd-video-player h4 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 18px;
+    border-bottom: 2px solid #0073aa;
+    padding-bottom: 10px;
+}
+
+.smd-player-visualizer {
+    display: flex;
+    align-items: flex-end;
+    height: 60px;
+    gap: 2px;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.smd-waveform-bar {
+    flex: 1;
+    background: linear-gradient(to top, #0073aa, #00a0d2);
+    border-radius: 2px 2px 0 0;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.smd-waveform-bar:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+@keyframes pulse {
+    0% { height: 30%; }
+    100% { height: 100%; }
+}
+
+.smd-player-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.smd-download-btn {
+    background: linear-gradient(135deg, #0073aa, #00a0d2);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,115,170,0.3);
+}
+
+.smd-download-btn:hover {
+    background: linear-gradient(135deg, #005a87, #0073aa);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,115,170,0.4);
+}
+
+.smd-play-count {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .smd-player-controls {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .smd-audio-player, .smd-video-player {
+        padding: 15px;
+    }
+}
+
+/* Social media links */
+.smd-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.smd-social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #0073aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.smd-social-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Donation widget */
+.smd-donation-widget {
+    background: linear-gradient(135deg, #00c853, #009624);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,200,83,0.3);
+}
+
+.smd-donation-widget h3 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.smd-donation-btn {
+    background: white;
+    color: #00c853;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.smd-donation-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Ad widget */
+.smd-ad-widget {
+    background: #fff9c4;
+    border: 2px solid #ffd54f;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255,213,79,0.3);
+}
+
+.smd-ad-widget h4 {
+    margin: 0 0 10px 0;
+    color: #e65100;
+}
+
+.smd-ad-widget p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.smd-ad-widget-btn {
+    background: #e65100;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+}
